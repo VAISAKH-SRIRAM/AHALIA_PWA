@@ -6,6 +6,11 @@ import { NetworkProvider } from './contexts/NetworkContext';
 import { DataProvider } from './contexts/DataContext';
 import Layout from './components/Layout';
 import Home from './pages/Home';
+import Registration from './pages/Registration';
+import Queue from './pages/Queue';
+import ProcedureBilling from './pages/ProcedureBilling';
+import PharmacyBilling from './pages/PharmacyBilling';
+import Sync from './pages/Sync';
 
 function App() {
   return (
@@ -16,11 +21,11 @@ function App() {
             <Layout>
               <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/registration" element={<div className="p-4 text-center text-gray-500">Registration Page - Coming Soon</div>} />
-                <Route path="/queue" element={<div className="p-4 text-center text-gray-500">Queue Page - Coming Soon</div>} />
-                <Route path="/sync" element={<div className="p-4 text-center text-gray-500">Sync Page - Coming Soon</div>} />
-                <Route path="/procedure-bill" element={<div className="p-4 text-center text-gray-500">Procedure Billing - Coming Soon</div>} />
-                <Route path="/pharmacy-bill" element={<div className="p-4 text-center text-gray-500">Pharmacy Billing - Coming Soon</div>} />
+                <Route path="/registration" element={<Registration />} />
+                <Route path="/queue" element={<Queue />} />
+                <Route path="/procedure-bill" element={<ProcedureBilling />} />
+                <Route path="/pharmacy-bill" element={<PharmacyBilling />} />
+                <Route path="/sync" element={<Sync />} />
               </Routes>
             </Layout>
           </BrowserRouter>
